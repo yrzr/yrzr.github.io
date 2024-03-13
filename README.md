@@ -1,3 +1,3 @@
-# hugo-blog
+# yrzr.github.io
 
-A blog based on [Hugo](https://gohugo.io/)
+yrzr's blog build by hugo
