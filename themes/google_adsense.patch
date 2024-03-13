@@ -1,0 +1,12 @@
+diff --git a/layouts/partials/header.html b/layouts/partials/header.html
+index 8bfb745..5f685a0 100644
+--- a/layouts/partials/header.html
++++ b/layouts/partials/header.html
+@@ -1,5 +1,7 @@
+ {{- /* Desktop header */ -}}
+ <header class="desktop" id="header-desktop">
++    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9779931636244419"
++     crossorigin="anonymous"></script>
+     <div class="header-wrapper">
+         <div class="header-title">
+             <a href="{{ .Site.Home.RelPermalink }}" title="{{ .Site.Title }}">
