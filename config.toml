@@ -442,10 +442,10 @@ enableEmoji = true
       Mastodon = false
     # Comment config
     [params.page.comment]
-      enable = false
+      enable = true
       # Disqus comment config
       [params.page.comment.disqus]
-        enable = true
+        enable = false
         # Disqus shortname to use Disqus in posts
         shortname = "https-www-yrzr-tk"
       # Gitalk comment config
@@ -549,12 +549,12 @@ enableEmoji = true
         simple_view = false
       # giscus comment config
       [params.page.comment.giscus]
-        enable = false
+        enable = true
         # owner/repo
-        dataRepo = ""
-        dataRepoId = ""
-        dataCategory = ""
-        dataCategoryId = ""
+        dataRepo = "yrzr/yrzr.github.io"
+        dataRepoId = "R_kgDOLfrmkg"
+        dataCategory = "Announcements"
+        dataCategoryId = "DIC_kwDOLfrmks4Cd8aw"
         dataMapping = "pathname"
         dataReactionsEnabled = "1"
         dataEmitMetadata = "0"
