@@ -38,15 +38,15 @@ echo 'hw.uart.console=""' > /boot/loader.conf.local
 
 ### 2.2 Repo
 
-You can use `https://ftp.yrzr.tk/opnsense/` as the repo URL to get almost all the plugins as if on AMD64, as well as the updates (however, I will not update the packages frequently).
+You can use ~~https://ftp.yrzr.tk/opnsense~~ `http://147.8.92.207/opnsense` (update on 2024/03/28, the domain `yrzr.tk` is no longer used, see [this post](../hello-github-io/)) as the repo URL to get almost all the plugins as if on AMD64, as well as the updates (however, I will not update the packages frequently).
 
 Accept the fingerprint of my server from the shell:
 
 ```bash
-curl https://ftp.yrzr.tk/opnsense/fingerprint -o /usr/local/etc/pkg/fingerprints/OPNsense/trusted/ftp.yrzr.tk
+curl http://147.8.92.207/opnsense/fingerprint -o /usr/local/etc/pkg/fingerprints/OPNsense/trusted/yrzr
 ```
 
-Then modify the `Mirror` section in `System/Firmware/Settings` on WebUI to `(other)` and `https://ftp.yrzr.tk/opnsense`.
+Then modify the `Mirror` section in `System/Firmware/Settings` on WebUI to `(other)` and `http://147.8.92.207/opnsense`.
 
 ![Alt text](/images/opnsense-21-for-aarch64/mirror.png "Modify the Mirror section.")
 
@@ -59,7 +59,7 @@ You can also edit `/usr/local/etc/pkg/repos/OPNsense.conf` as an alternative opt
 ```txt
 OPNsense: {
   fingerprints: "/usr/local/etc/pkg/fingerprints/OPNsense",
-  url: "pkg+https://ftp.yrzr.tk/opnsense/${ABI}/21.X/latest",
+  url: "pkg+http://147.8.92.207/opnsense/${ABI}/21.X/latest",
   signature_type: "NONE",
   mirror_type: "NONE",
   priority: 11,
@@ -155,7 +155,9 @@ You can also refer to the FreeBSD wiki[^qemu_wiki] for more information.
 ## 4 RPIs
 
 - The images are built for aarch64. Therefore, RPIs with SoCs before BCM2837 will NOT be compatible.
-- ~~The FreeBSD kernel supports RPI4 with and the ethernet after revision r360181[^r360181]. While the current OPNsense 21.1[^opn21.1] on this day of writing (and is not expected to change before next release) is built on HardenedBSD v1200059[^v1200059], which is built on FreeBSD v1201000. From the FreeBSD porter's handbook[^handbook], it is still on revision r352546[^r352546]. Thus, RPI4 support will not be ready until the upstream merge.~~ [A dirty image](https://ftp.yrzr.tk/opnsense/FreeBSD%3A12%3Aaarch64/21.1/images/dirty/) is made by replacing HardenedBSD kernel with FreeBSD 13.0-RELEASE kernel, which is bootable on RPI4. Meanwhile, the modules `if_bridge` and `if_enc` are disabled due to boot issue.
+- ~~The FreeBSD kernel supports RPI4 with and the ethernet after revision r360181[^r360181]. While the current OPNsense 21.1[^opn21.1] on this day of writing (and is not expected to change before next release) is built on HardenedBSD v1200059[^v1200059], which is built on FreeBSD v1201000. From the FreeBSD porter's handbook[^handbook], it is still on revision r352546[^r352546]. Thus, RPI4 support will not be ready until the upstream merge.~~
+- ~~[A dirty image](http://147.8.92.207/opnsense/FreeBSD%3A12%3Aaarch64/21.1/images/dirty/) is made by replacing HardenedBSD kernel with FreeBSD 13.0-RELEASE kernel, which is bootable on RPI4. Meanwhile, the modules `if_bridge` and `if_enc` are disabled due to boot issue.~~
+- My unofficial RPI4 support now comes since OPNsense 22.
 
 ### 4.1 Writing the image
 

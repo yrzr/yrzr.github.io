@@ -31,15 +31,15 @@ The default user name and password is `root:opnsense` for a fresh install.
 
 ### 2.1 Repo
 
-You can use `https://ftp.yrzr.tk/opnsense/` as the repo URL to get almost all the plugins as if on AMD64 and the updates (however, I will not update the packages frequently).
+You can use ~~https://ftp.yrzr.tk/opnsense~~ `http://147.8.92.207/opnsense` (update on 2024/03/28, the domain `yrzr.tk` is no longer used, see [this post](../hello-github-io/)) as the repo URL to get almost all the plugins as if on AMD64 and the updates (however, I will not update the packages frequently).
 
 Accept the fingerprint of my server from the shell:
 
 ```bash
-curl https://ftp.yrzr.tk/opnsense/fingerprint -o /usr/local/etc/pkg/fingerprints/OPNsense/trusted/ftp.yrzr.tk
+curl http://147.8.92.207/opnsense/fingerprint -o /usr/local/etc/pkg/fingerprints/OPNsense/trusted/yrzr
 ```
 
-Then modify the `Mirror` section in `System/Firmware/Settings` on WebUI to `(other)` and `https://ftp.yrzr.tk/opnsense`.
+Then modify the `Mirror` section in `System/Firmware/Settings` on WebUI to `(other)` and `http://147.8.92.207/opnsense`.
 
 ![Alt text](/images/opnsense-22-for-aarch64/mirror.png "Modify the Mirror section.")
 
@@ -52,7 +52,7 @@ You can also edit `/usr/local/etc/pkg/repos/OPNsense.conf` as an alternative opt
 ```txt
 OPNsense: {
   fingerprints: "/usr/local/etc/pkg/fingerprints/OPNsense",
-  url: "pkg+https://ftp.yrzr.tk/opnsense/${ABI}/22.X/latest",
+  url: "pkg+http://147.8.92.207/opnsense/${ABI}/22.X/latest",
   signature_type: "NONE",
   mirror_type: "NONE",
   priority: 11,
