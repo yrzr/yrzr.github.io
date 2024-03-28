@@ -1,7 +1,6 @@
 ---
 title: "OPNsense 23 for aarch64"
 date: 2023-07-13T15:13:36+08:00
-lastmod: 2023-08-16T11:49:35+08:00
 tags: [OPNsense, FreeBSD, aarch64, rpi3, rpi4, r4s, ESXi, QEMU, KVM]
 resources:
 featuredImage: "/images/opnsense-23-for-aarch64/dashboard.png"

@@ -1,7 +1,6 @@
 ---
 title: "Running OPNsense on R6S"
 date: 2023-07-25T12:59:15+08:00
-lastmod: 2023-07-26T11:50:35+08:00
 tags: [OPNsense, FreeBSD, aarch64, r6s, 2.5GE]
 resources:
 # featuredImage: "/images/port-opnsense-to-r6s/booted.jpg"

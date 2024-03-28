@@ -1,7 +1,6 @@
 ---
 title: "Bye yrzr.tk, and hello yrz.github.io"
 date: 2024-03-28T22:22:31+08:00
-lastmod: 2024-03-28T22:57:12+08:00
 tags: [domain, blog, kitty, cat]
 resources:
 featuredImagePreview: "/images/luna/_DSC6987_preview.jpg"
