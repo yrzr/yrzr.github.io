@@ -1,3 +1,3 @@
 # yrzr.github.io
 
-yrzr's blog build by hugo
+yrzr's blog powered by hugo
