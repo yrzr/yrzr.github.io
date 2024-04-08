@@ -11,7 +11,7 @@ featuredImagePreview: "/images/port-opnsense-to-r6s/booted.jpg"
 
 > The NanoPi R6S (as “R6S”) is an open-sourced mini IoT gateway device with two 2.5G and one Gbps Ethernet ports, designed and developed by FriendlyElec.[^wiki]
 
-The R6S is built on RK3588S, which has Quad-core ARM Cortex-A76(up to 2.4GHz) and quad-core Cortex-A55 CPU (up to 1.8GHz), and 8GB LPDDR4X RAM at 2133MHz. It has 32GB eMMC and supports an SD card or disk drive through USB 3.0 port. And the charming points are the three Ethernet ports. Moreover, Friendlyelec claims[^friendlyelec] that R6S has extremely high encryption performance.
+The R6S is built on RK3588S, which has Quad-core ARM Cortex-A76 (up to 2.4GHz) and quad-core Cortex-A55 CPU (up to 1.8GHz), and 8GB LPDDR4X RAM at 2133MHz. It has 32GB eMMC and supports an SD card or disk drive through USB 3.0 port. And the charming points are the three Ethernet ports. Moreover, Friendlyelec claims[^friendlyelec] that R6S has extremely high encryption performance.
 
 In general, the R6S is a promising home router hardware, except there is only OpenWRT running on it. Then the idea came to me that I might port OPNsense to it if I get one. What I did was share this idea with FriendlyELEC through email. And things go magic,  they replied without hesitation and delivered me a brand new R6S. 
 
