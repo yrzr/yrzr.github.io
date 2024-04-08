@@ -4,7 +4,7 @@ date: 2024-04-08T10:38:36+08:00
 tags: [note, rock5b, rk3588, rockchip, aarch64, U-Boot, extlinux, efi]
 ---
 
-This is a note on building U-Boot for Radxa Rock5b[^rock5b] and makeing it boot.
+This is a note on building U-Boot for Radxa Rock5b[^rock5b] and making it boot.
 
 There are two versions of U-Boot for Rock5b; one is from Radxa (legacy version), and the other is from Collabora (mainline version, still under development but is pretty complete). Both versions can load bootloaders from SPI flash, NVME SSD, SD card, eMMC, and USB drive. However, only the mainline version can boot EFI applications like `grub`.
 
