@@ -7,7 +7,7 @@ resources:
 featuredImagePreview: "/images/port-opnsense-to-r6s/booted.jpg"
 ---
 
-## 1. Introduction
+## 1 Introduction
 
 > The NanoPi R6S (as “R6S”) is an open-sourced mini IoT gateway device with two 2.5G and one Gbps Ethernet ports, designed and developed by FriendlyElec.[^wiki]
 
@@ -17,19 +17,19 @@ In general, the R6S is a promising home router hardware, except there is only Op
 
 ***So, thanks to FriendlyELEC, we have this post.***
 
-## 2. A Little Research
+## 2 A Little Research
 
 Before I got the board, I'd already got a Rock 5B. I noticed that the official U-boot provided by Rockchip cannot boot EFI[^radxa], and the problem will not be solved in the near future. The [mainline effords](https://gitlab.collabora.com/hardware-enablement/rockchip-3588/u-boot) have been made only on Rock 5B.
 
 While [EDK2 UEFI firmware for RK3588](https://github.com/edk2-porting/edk2-rk3588) is workable on many devices, including R6S since this commit[^initdc]. And we can directly get the [firmware artifacts](https://github.com/edk2-porting/edk2-rk3588/actions/runs/5651189824) from the `Nightly build `GitHub action. From the [introduction](https://github.com/edk2-porting/edk2-rk3588/blob/v0.7.1/README.md), the GMAC Ethernet is not working, while PCIe 3.0 is partially working. Let's hope we have two 2.5G Ethernet running.
 
-## 3. Build OPNsense
+## 3 Build OPNsense
 
 The build processes are similar to other devices. It will do with a bit of modification. Thanks to [Sleep Walker](https://twitter.com/S199pWa1k9r), I realize that package `net/realtek-re-kmod` is required to drive the two 2.5G Ethernet chips. And we also want to turn off `arm_install_uboot()` since we are not using U-Boot. And we get the `efi` console instead of `video` console.
 
 The tools is pushed to my [repo](https://github.com/yrzr/opnsense-tools/tree/r6s) on branch `r6s`, among with the [artifacts](https://github.com/yrzr/opnsense-tools/releases/tag/23.7.r1).
 
-## 4. Booting R6S
+## 4 Booting R6S
 
 I am wondering whether the FreeBSD kernel could read from the onboard eMMC. And I have an SSD drive and a SATA to USB bridge by hand. So I just jump to using an SSD driver through the USB 3.0 port.
 
@@ -71,7 +71,7 @@ And Finally, OPNsense booted successfully, and the two 2.5G Ethernets are workin
 
 ![Alt text](/images/port-opnsense-to-r6s/booted.jpg "OPNsense booted successfully!")
 
-## 5. Tests & Run
+## 5 Tests & Run
 
 So, let's see how everything is working.
 
@@ -617,7 +617,7 @@ Reverse mode, remote host 192.168.1.102 is sending
 iperf Done.
 ```
 
-## 6. Conclusion and future works
+## 6 Conclusion and future works
 
 We have got OPNsense running on Nanopi R6S through UEFI firmware. The system boots but still have some problems.
 

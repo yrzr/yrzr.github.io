@@ -1,12 +1,12 @@
 ---
 title: "Tutorial: Build OPNsense ARM64 images on a RPI4"
 date: 2024-04-08T17:03:39+08:00
-tags: [OPNsense, FreeBSD, aarch64, arm64, rpi4]
+tags: [tutorial, OPNsense, FreeBSD, aarch64, arm64, rpi4]
 ---
 
 It has been a long time since the [opnsense/tools](https://github.com/opnsense/tools) can build ARM64 images.
 
-While some find it troublesome to cross-build the ARM64 image from an AMD64 machine, I have always built the images on an ARM64 machine. Usually, I use a  KVM virtual machine on my Radxa Rock5b, with the four Cortex-A76 cores of RK3588, 12G of memory, and raw access to SSD storage; it works like a charm and finishes a fresh new build in 20 hours.
+While some find it troublesome to cross-build the ARM64 image from an AMD64 machine, I have always built the images on an ARM64 machine. Usually, I use a  KVM virtual machine on my Radxa Rock5b, with the four Cortex-A76 cores of RK3588, 12G of memory, and pass-through access to SSD storage; it works like a charm and finishes a fresh new build in 20 hours.
 
 A Raspberry Pi 4B with 4G of memory or above is also more than enough to build the image. As an RPI4 would be more common than an RK3588 board, I will write a tutorial on how to build the image on an RPI4.
 
