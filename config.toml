@@ -218,7 +218,7 @@ enableEmoji = true
     [params.home.profile]
       enable = true
       # Gravatar Email for preferred avatar in home page
-      # gravatarEmail = "shenleidi1993@gmail.com"
+      # gravatarEmail = "shenleidi@gmail.com"
       # URL of avatar shown in home page
       # Place your avatar file under static or assets directory
       # The filepath is relative to the static or assets directory
@@ -313,7 +313,7 @@ enableEmoji = true
     # Linktree = ""
     # QQ = "1002880935"
     # QQGroup = ""
-    Email = "shenleidi1993@gmail.com"
+    Email = "shenleidi@gmail.com"
     RSS = true
 
   # Page config
@@ -727,7 +727,7 @@ enableEmoji = true
 # Author config
 [author]
   name = "yrzr"
-  email = "shenleidi1993@gmail.com"
+  email = "shenleidi@gmail.com"
   # link = ""
   # avatar = ""
   # gravatarEmail = ""
