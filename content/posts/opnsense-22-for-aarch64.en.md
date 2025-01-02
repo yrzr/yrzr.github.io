@@ -30,7 +30,7 @@ The default user name and password is `root:opnsense` for a fresh install.
 
 ### 2.1 Repo
 
-You can use ~~https://ftp.yrzr.tk/opnsense~~ `http://147.8.92.207/opnsense` (update on 2024/03/28, the domain `yrzr.tk` is no longer used, see [this post](../hello-github-io/)) as the repo URL to get almost all the plugins as if on AMD64 and the updates (however, I will not update the packages frequently).
+You can use my firmware repo ~~https://ftp.yrzr.tk/opnsense~~ ~~http://147.8.92.207/opnsense (update on 2024/03/28, the domain yrzr.tk is no longer used, see [this post](../hello-github-io/))~~ [http://168.138.176.159/opnsense/](http://168.138.176.159/opnsense/) (update on 2025/01/01) as the repo URL to get almost all the plugins as if on AMD64 and the updates (however, I will not update the packages frequently).
 
 Accept the fingerprint of my server from the shell:
 

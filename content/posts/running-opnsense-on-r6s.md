@@ -79,7 +79,7 @@ So, let's see how everything is working.
 
 Let's get a genernal view first.
 
-After using my mirror (~~https://ftp.yrzr.tk/opnsense~~ `http://147.8.92.207/opnsense`), we could install packages and do a hw-probe and see the [result](https://bsd-hardware.info/?probe=ebca9e6d70).
+After using my firmware repo ~~https://ftp.yrzr.tk/opnsense~~ ~~http://147.8.92.207/opnsense (update on 2024/03/28, the domain yrzr.tk is no longer used, see [this post](../hello-github-io/))~~ [http://168.138.176.159/opnsense/](http://168.138.176.159/opnsense/) (update on 2025/01/01), we could install packages and do a hw-probe and see the [result](https://bsd-hardware.info/?probe=ebca9e6d70).
 
 ```bash
 root@OPNsense:~ # pkg install -y hw-probe
