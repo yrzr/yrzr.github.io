@@ -342,8 +342,6 @@ enableEmoji = true
     ruby = true
     # whether to enable the fraction extended syntax
     fraction = true
-    # whether to enable the fontawesome extended syntax
-    fontawesome = true
     # whether to show link to Raw Markdown content of the content
     linkToMarkdown = true
     # configure the link to the source file of the post
@@ -707,6 +705,14 @@ enableEmoji = true
     # whether to use object-fit-images to be compatible with older browsers
     objectFit = false
 
+  # Author config
+  [params.author]
+    name = "yrzr"
+    email = "shenleidi@gmail.com"
+    # link = ""
+    # avatar = ""
+    # gravatarEmail = ""
+
 # Markup related config in Hugo
 [markup]
   # Syntax Highlighting
@@ -735,14 +741,6 @@ enableEmoji = true
   [markup.tableOfContents]
     startLevel = 2
     endLevel = 6
-
-# Author config
-[author]
-  name = "yrzr"
-  email = "shenleidi@gmail.com"
-  # link = ""
-  # avatar = ""
-  # gravatarEmail = ""
 
 # Sitemap config
 [sitemap]
