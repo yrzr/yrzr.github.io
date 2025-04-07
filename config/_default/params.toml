@@ -32,8 +32,8 @@ bundle = false
   name = "yrzr"
   email = "shenleidi@gmail.com"
   link = "https://yrzr.github.io/"
-  # avatar = ""
-  gravatarEmail = "shenleidi@gmail.com"
+  avatar = "https://avatars2.githubusercontent.com/u/8390472?s=400&v=4"
+  gravatarEmail = ""
 
 [image]
   # cache remote images for better optimisations
